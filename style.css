@@ -1,10 +1,10 @@
 body {
-    background-color: rgba(17, 17, 17, 0.7); /* 30% darker black */
+    background-color: #0d0d0d;
     color: #f2f2f2;
 }
 
 header {
-    background-color: #333;
+    background-color: #222;
     color: #f2f2f2;
 }
 
@@ -14,11 +14,11 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #f2f2f2;
-    color: #1a1a1a;
+    color: #0d0d0d;
 }
 
 .audio-file {
-    background-color: #333;
+    background-color: #222;
     color: #f2f2f2;
     padding: 10px;
     margin: 10px;
