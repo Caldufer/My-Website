@@ -37,6 +37,11 @@ nav ul li a:hover {
     font-family: "Open Sans", sans-serif;
 }
 
+#portfolio {
+    text-align: right;
+    padding: 20px;
+}
+
 .audio-file {
     background-color: #262626;
     color: #f2f2f2;
