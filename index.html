@@ -21,21 +21,36 @@
 
 	<section id="portfolio">
 		<h2>My Sound Portfolio</h2>
+
 		<div class="audio-file">
-			<img src="cover-art-1.jpg" alt="Cover Art 1">
-			<audio controls>
-				<source src="audio-file-1.mp3" type="audio/mpeg">
+			<img id="cover-art" src="" alt="Cover Art">
+			<audio id="audio-file" controls>
+				Your browser does not support the audio element.
 			</audio>
-			<p>Audio file description goes here</p>
+			<div class="upload-section">
+				<label for="audio-file-input">Upload Audio File</label>
+				<input type="file" id="audio-file-input">
+				<label for="cover-art-input">Upload Cover Art</label>
+				<input type="file" id="cover-art-input">
+			</div>
+			<p id="audio-description">Audio file description goes here</p>
 		</div>
 
 		<div class="audio-file">
-			<img src="cover-art-2.jpg" alt="Cover Art 2">
-			<audio controls>
-				<source src="audio-file-2.mp3" type="audio/mpeg">
+			<img id="cover-art-2" src="" alt="Cover Art">
+			<audio id="audio-file-2" controls>
+				Your browser does not support the audio element.
 			</audio>
-			<p>Audio file description goes here</p>
+			<div class="upload-section">
+				<label for="audio-file-input-2">Upload Audio File</label>
+				<input type="file" id="audio-file-input-2">
+				<label for="cover-art-input-2">Upload Cover Art</label>
+				<input type="file" id="cover-art-input-2">
+			</div>
+			<p id="audio-description-2">Audio file description goes here</p>
 		</div>
 	</section>
+
+	<script src="script.js"></script>
 </body>
 </html>
