@@ -51,9 +51,9 @@ nav ul li a:hover {
 }
 
 .audio-file img {
-    max-width: 100%;
+    max-width: 50%;
 }
 
 .audio-file audio {
-    width: 100%;
+    width: 50%;
 }
