@@ -65,6 +65,7 @@ nav ul li a:hover {
   /* Updated style for sidebar links */
   padding: 10px;
   border-radius: 5px;
+  margin-bottom: 5px; /* Aumenta el valor para aumentar la separación vertical */
 }
 
 #sidebar nav ul li a:hover {
