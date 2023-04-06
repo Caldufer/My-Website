@@ -9,14 +9,18 @@
 			top: 0;
 			left: 0;
 			height: 100vh;
-			width: 200px;
-			background-color: #f1f1f1;
+			width: 250px; /* increased width to 250px */
+			background-color: #333333; /* changed background color to darker color */
+			color: #ffffff; /* changed font color to white */
 			padding: 20px;
 			box-sizing: border-box;
+			font-family: 'Open Sans', sans-serif; /* changed font to Open Sans */
+			font-size: 18px; /* increased font size to 18px */
+			z-index: 1; /* added z-index to keep it above other elements */
 		}
 
 		.main {
-			margin-left: 200px;
+			margin-left: 250px; /* adjusted margin to align with sidebar */
 			padding: 20px;
 			box-sizing: border-box;
 		}
@@ -78,11 +82,4 @@
 					<label for="cover-art-input-2">Upload Cover Art</label>
 					<input type="file" id="cover-art-input-2">
 				</div>
-				<p id="audio-description-2">Audio file description goes here</p>
-			</div>
-		</section>
-	</div>
-
-	<script src="script.js"></script>
-</body>
-</html>
+				<p id="audio-description-2">Audio file description goes here</
