@@ -92,7 +92,7 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transform: scale(0.75); /* Reducción de tamaño del 25% */
+  transform: scale(0.75);
 }
 
 .audio-file img {
