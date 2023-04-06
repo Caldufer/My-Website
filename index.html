@@ -1,62 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Soundfolio</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <title>Soundfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<header>
-		<div class="title-container">
-			<h1>Soundfolio</h1>
-			<button id="menu-toggle">&#9776;</button>
-		</div>
-	</header>
-	
-	<div class="sidebar">
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Discover</a></li>
-				<li><a href="#">Notifications</a></li>
-				<li><a href="#">Messages</a></li>
-				<li><a href="#">Profile</a></li>
-				<li><a href="#">Wallet</a></li>
-			</ul>
-		</nav>
-	</div>
+    <header>
+        <div class="title-container">
+            <h1>Soundfolio</h1>
+        </div>
+    </header>
 
-	<section id="portfolio">
-		<h2>My Sound Portfolio</h2>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="portfolio">
+            <h2>My Sound Portfolio</h2>
 
-		<div class="audio-file">
-			<img id="cover-art" src="" alt="Cover Art">
-			<audio id="audio-file" controls>
-				Your browser does not support the audio element.
-			</audio>
-			<div class="upload-section">
-				<label for="audio-file-input">Upload Audio File</label>
-				<input type="file" id="audio-file-input">
-				<label for="cover-art-input">Upload Cover Art</label>
-				<input type="file" id="cover-art-input">
-			</div>
-			<p id="audio-description">Audio file description goes here</p>
-		</div>
+            <div class="audio-file">
+                <img id="cover-art" src="" alt="Cover Art">
+                <audio id="audio-file" controls>
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="upload-section">
+                    <label for="audio-file-input">Upload Audio File</label>
+                    <input type="file" id="audio-file-input">
+                    <label for="cover-art-input">Upload Cover Art</label>
+                    <input type="file" id="cover-art-input">
+                </div>
+                <p id="audio-description">Audio file description goes here</p>
+            </div>
 
-		<div class="audio-file">
-			<img id="cover-art-2" src="" alt="Cover Art">
-			<audio id="audio-file-2" controls>
-				Your browser does not support the audio element.
-			</audio>
-			<div class="upload-section">
-				<label for="audio-file-input-2">Upload Audio File</label>
-				<input type="file" id="audio-file-input-2">
-				<label for="cover-art-input-2">Upload Cover Art</label>
-				<input type="file" id="cover-art-input-2">
-			</div>
-			<p id="audio-description-2">Audio file description goes here</p>
-		</div>
-	</section>
+            <div class="audio-file">
+                <img id="cover-art-2" src="" alt="Cover Art">
+                <audio id="audio-file-2" controls>
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="upload-section">
+                    <label for="audio-file-input-2">Upload Audio File</label>
+                    <input type="file" id="audio-file-input-2">
+                    <label for="cover-art-input-2">Upload Cover Art</label>
+                    <input type="file" id="cover-art-input-2">
+                </div>
+                <p id="audio-description-2">Audio file description goes here</p>
+            </div>
+        </section>
+    </div>
 
-	<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
