@@ -1,59 +1,72 @@
 body {
-    background-color: #0e0e0e;
-    color: #f2f2f2;
-    font-family: "Open Sans", sans-serif;
+  background-color: #0e0e0e;
+  color: #f2f2f2;
+  font-family: "Open Sans", sans-serif;
 }
 
 header {
-    background-color: #262626;
-    color: #f2f2f2;
-    font-family: "Open Sans", sans-serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+  background-color: #262626;
+  color: #f2f2f2;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 nav ul li {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 nav ul li a {
-    color: #f2f2f2;
-    font-family: "Open Sans", sans-serif;
-    text-decoration: none;
+  color: #f2f2f2;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
 }
 
 nav ul li a:hover {
-    background-color: #f2f2f2;
-    color: #0e0e0e;
-    font-family: "Open Sans", sans-serif;
+  background-color: #f2f2f2;
+  color: #0e0e0e;
+  font-family: "Open Sans", sans-serif;
 }
 
 #portfolio {
-    text-align: right;
-    padding: 20px;
+  text-align: right;
+  padding: 20px;
 }
 
 .audio-file {
-    background-color: #262626;
-    color: #f2f2f2;
-    padding: 10px;
-    margin: 10px;
-    font-family: "Open Sans", sans-serif;
+  background-color: #262626;
+  color: #f2f2f2;
+  padding: 10px;
+  margin: 10px;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .audio-file img {
-    max-width: 100%;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.audio-file label {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.audio-file input[type="file"] {
+  margin-bottom: 10px;
 }
 
 .audio-file audio {
-    width: 70%;
+  width: 70%;
 }
