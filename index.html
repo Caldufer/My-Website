@@ -1,65 +1,113 @@
-<!DOCTYPE html>
-<html>
+body {
+  background: linear-gradient(#0e0e0e, #262626);
+  color: #f2f2f2;
+  font-family: "Open Sans", sans-serif;
+}
 
-<head>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+header {
+  background-color: #262626;
+  color: #f2f2f2;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
 
-<body>
-  <header>
-    <h1>My Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
 
-  <div id="container">
-    <aside id="sidebar">
-      <nav>
-        <ul>
-          <li><a href="#">Sidebar Link 1</a></li>
-          <li><a href="#">Sidebar Link 2</a></li>
-          <li><a href="#">Sidebar Link 3</a></li>
-          <li><a href="#">Sidebar Link 4</a></li>
-        </ul>
-      </nav>
-    </aside>
+nav ul li {
+  margin: 0 10px;
+}
 
-    <div id="content">
-      <h2 id="portfolio">Portfolio</h2>
-      <div class="audio-file">
-        <img src="audio1.jpg" alt="Audio 1">
-        <label>Audio File 1</label>
-        <input type="file">
-        <audio controls>
-          <source src="audio1.mp3" type="audio/mpeg">
-        </audio>
-      </div>
-      <div class="audio-file">
-        <img src="audio2.jpg" alt="Audio 2">
-        <label>Audio File 2</label>
-        <input type="file">
-        <audio controls>
-          <source src="audio2.mp3" type="audio/mpeg">
-        </audio>
-      </div>
-      <div class="audio-file">
-        <img src="audio3.jpg" alt="Audio 3">
-        <label>Audio File 3</label>
-        <input type="file">
-        <audio controls>
-          <source src="audio3.mp3" type="audio/mpeg">
-        </audio>
-      </div>
-    </div>
-  </div>
+nav ul li a {
+  color: #f2f2f2;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+}
 
-</body>
+nav ul li a:hover {
+  background-color: #f2f2f2;
+  color: #0e0e0e;
+  font-family: "Open Sans", sans-serif;
+}
 
-</html>
+#container {
+  display: flex;
+}
+
+#sidebar {
+  background-color: #333333;
+  width: 200px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#sidebar nav {
+  margin-top: 20px;
+}
+
+#sidebar nav ul li {
+  margin: 10px;
+}
+
+#sidebar nav ul li a {
+  color: #f2f2f2;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+#sidebar nav ul li a:hover {
+  background-color: #f2f2f2;
+  color: #0e0e0e;
+  font-family: "Open Sans", sans-serif;
+}
+
+#content {
+  flex: 1;
+  padding: 20px;
+}
+
+#portfolio {
+  text-align: right;
+}
+
+.audio-file {
+  background-color: #262626;
+  color: #f2f2f2;
+  padding: 10px;
+  margin: 10px;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.audio-file img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.audio-file label {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.audio-file input[type="file"] {
+  margin-bottom: 10px;
+}
+
+.audio-file audio {
+  width: 70%;
+}
