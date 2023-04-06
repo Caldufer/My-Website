@@ -1,113 +1,117 @@
-body {
-  background: linear-gradient(#0e0e0e, #262626);
-  color: #f2f2f2;
-  font-family: "Open Sans", sans-serif;
-}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soundfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		.sidebar {
+			position: fixed;
+			top: 170px;
+			left: 8px;
+			height: 100vh;
+			width: 250px;
+			background: linear-gradient(to bottom, #222, #444);
+			padding: 20px;
+			box-sizing: border-box;
+			color: #fff;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 18px;
+		}
 
-header {
-  background-color: #262626;
-  color: #f2f2f2;
-  font-family: "Open Sans", sans-serif;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
+		.sidebar ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+		}
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
+		.sidebar ul li {
+			margin-bottom: 10px;
+		}
 
-nav ul li {
-  margin: 0 10px;
-}
+		.sidebar ul li a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 18px;
+		}
 
-nav ul li a {
-  color: #f2f2f2;
-  font-family: "Open Sans", sans-serif;
-  text-decoration: none;
-}
+		.sidebar ul li a:hover {
+			color: #0e0e0e;
+			background-color: #f2f2f2;
+		}
 
-nav ul li a:hover {
-  background-color: #f2f2f2;
-  color: #0e0e0e;
-  font-family: "Open Sans", sans-serif;
-}
+		.main {
+			margin-left: 250px;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+		
+		.gallery {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 20px;
+		}
+		
+		.gallery-item {
+			width: 100%;
+			height: 0;
+			padding-bottom: 100%;
+			background-color: #f2f2f2;
+			position: relative;
+			overflow: hidden;
+		}
+		
+		.gallery-item img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		
+		.gallery-item:hover {
+			background-color: #d9d9d9;
+			cursor: pointer;
+		}
+		
+		.gallery-item:hover img {
+			transform: scale(1.1);
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="title-container">
+			<h1>Soundfolio</h1>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 
-#container {
-  display: flex;
-}
+	<div class="sidebar">
+		<ul>
+			<li><a href="#">Inicio</a></li>
+			<li><a href="#">Descubrir</a></li>
+			<li><a href="#">Notificaciones</a></li>
+			<li><a href="#">Mensajes</a></li>
+			<li><a href="#">Perfil</a></li>
+			<li><a href="#">Wallet</a></li>
+		</ul>
+	</div>
 
-#sidebar {
-  background-color: #333333;
-  width: 200px;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 10px;
-}
+	<div class="main">
+		<section id="portfolio">
+			<h2>My Sound Portfolio</h2>
 
-#sidebar nav {
-  margin-top: 20px;
-}
-
-#sidebar nav ul li {
-  margin: 10px;
-}
-
-#sidebar nav ul li a {
-  color: #f2f2f2;
-  font-family: "Open Sans", sans-serif;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 5px;
-}
-
-#sidebar nav ul li a:hover {
-  background-color: #f2f2f2;
-  color: #0e0e0e;
-  font-family: "Open Sans", sans-serif;
-}
-
-#content {
-  flex: 1;
-  padding: 20px;
-}
-
-#portfolio {
-  text-align: right;
-}
-
-.audio-file {
-  background-color: #262626;
-  color: #f2f2f2;
-  padding: 10px;
-  margin: 10px;
-  font-family: "Open Sans", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.audio-file img {
-  max-width: 100%;
-  margin-bottom: 10px;
-}
-
-.audio-file label {
-  font-size: 1.2em;
-  margin-bottom: 10px;
-}
-
-.audio-file input[type="file"] {
-  margin-bottom: 10px;
-}
-
-.audio-file audio {
-  width: 70%;
-}
+			<div class="gallery">
+				<div class="gallery-item">
+					<img src="https://via.placeholder.com/300" alt="Cover Art">
+				</div>
+				<div class="gallery-item">
+					<img src="https://via.placeholder.com
