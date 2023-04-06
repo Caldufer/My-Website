@@ -48,6 +48,7 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 10px; /* Added padding */
 }
 
 #sidebar nav {
@@ -89,9 +90,9 @@ nav ul li a:hover {
   padding: 10px;
   margin: 10px;
   font-family: "Open Sans", sans-serif;
-  display: grid;
-  grid-template-columns: repeat(3, 800px);
-  grid-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .audio-file img {
@@ -109,5 +110,5 @@ nav ul li a:hover {
 }
 
 .audio-file audio {
-  width: 100%;
+  width: 70%;
 }
