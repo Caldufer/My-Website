@@ -4,6 +4,47 @@
 	<title>Soundfolio</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<style>
+		/* Estilos para el header */
+		header {
+			font-size: 24px; /* Tamaño de fuente por defecto */
+		}
+
+		.title-container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 20px;
+			background-color: #222;
+			color: #fff;
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		.title-container h1 {
+			font-size: inherit;
+			margin: 0;
+		}
+
+		.navbar {
+			display: flex;
+		}
+
+		.navbar ul {
+			display: flex;
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		.navbar ul li {
+			margin-left: 10px;
+		}
+
+		.navbar ul li a {
+			color: #fff;
+			text-decoration: none;
+		}
+
+		/* Estilos para la barra lateral */
 		.sidebar {
 			position: fixed;
 			top: 170px;
@@ -39,6 +80,7 @@
 			background-color: #f2f2f2;
 		}
 
+		/* Estilos para la sección principal */
 		.main {
 			margin-left: 250px;
 			padding: 20px;
@@ -83,35 +125,7 @@
 	<header>
 		<div class="title-container">
 			<h1>Soundfolio</h1>
-			<nav>
+			<nav class="navbar">
 				<ul>
 					<li><a href="#">Home</a></li>
 					<li><a href="#">About</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-
-	<div class="sidebar">
-		<ul>
-			<li><a href="#">Inicio</a></li>
-			<li><a href="#">Descubrir</a></li>
-			<li><a href="#">Notificaciones</a></li>
-			<li><a href="#">Mensajes</a></li>
-			<li><a href="#">Perfil</a></li>
-			<li><a href="#">Wallet</a></li>
-		</ul>
-	</div>
-
-	<div class="main">
-		<section id="portfolio">
-			<h2>My Sound Portfolio</h2>
-
-			<div class="gallery">
-				<div class="gallery-item">
-					<img src="https://via.placeholder.com/300" alt="Cover Art">
-				</div>
-				<div class="gallery-item">
-					<img src="https://via.placeholder.com
